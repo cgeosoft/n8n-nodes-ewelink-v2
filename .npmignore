@@ -1,0 +1,70 @@
+# Source files
+credentials/**/*.ts
+nodes/**/*.ts
+lib/**/*.ts
+!dist/**
+
+# Configuration files
+tsconfig.json
+biome.json
+.github/
+workflows/
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# Documentation
+.github/
+*.md
+!README.md
+!LICENSE.md
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+workflows/
+
+# Dependencies
+node_modules/
+
+# Temporary and cache
+.cache/
+.tmp/
+.temp/
+*.tmp
+.stfolder/
+.stignore
+
+# Lock files (keep only the one you use)
+package-lock.json
+yarn.lock
+
+# Biome cache
+.biome/
+
+# Build info
+*.tsbuildinfo

@@ -1,0 +1,22 @@
+{
+  "node": "n8n-nodes-base.ewelink",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Miscellaneous"],
+  "subcategories": {
+    "Miscellaneous": ["IoT", "Smart Home"]
+  },
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://dev.ewelink.cc/"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://dev.ewelink.cc/"
+      }
+    ]
+  },
+  "alias": ["smart home", "sonoff", "iot", "device", "switch"]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "@cgeosoft/n8n-nodes-ewelink",
+  "version": "0.1.0",
+  "description": "n8n nodes for eWeLink v2 API - Control your smart home devices",
+  "license": "MIT",
+  "homepage": "https://github.com/cgeosoft/n8n-nodes-ewelink",
+  "keywords": [
+    "n8n-community-node-package",
+    "ewelink",
+    "smart-home",
+    "sonoff",
+    "iot"
+  ],
+  "author": {
+    "name": "Christos Georgiou",
+    "email": "christos@cgeosoft.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgeosoft/n8n-nodes-ewelink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cgeosoft/n8n-nodes-ewelink/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "n8n-nodes-ewelink-v2": "./bin/oauth-helper.js"
+  },
+  "scripts": {
+    "build": "tsc && n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
+    "biome:ci": "biome ci .",
+    "release": "n8n-node release",
+    "prepublishOnly": "bun run build && n8n-node prerelease"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/EwelinkApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Ewelink/Ewelink.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
+    "@n8n/node-cli": "*",
+    "@types/node": "^25.2.0",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "ewelink-api-next": "^1.0.4",
+    "open": "^10.0.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
